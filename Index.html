@@ -1,0 +1,91 @@
+<html>
+<head>
+	<link rel="stylesheet" href = "style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+	
+	<body>
+		<a id="familytxt">Sign in to Family</a>
+		<div id = "IncPassBox">
+		<a id = "IncPass">Incorrect password</a><button onclick="ReturnToNormal()" id = "WrngPassExit"> x </button></div>
+		<div id="login"><p>
+			<a class="etext">Username</a> <br><input id="email" class="textbox" type="text" name="email"> <p>
+		<a class="etext">Password</a><a id="forgot" href="https://media1.giphy.com/media/FgjKGypLCAety/giphy.gif">Forgot Passowrd?</a><br>
+		<input id="pass" class="textbox" type="password" name="password">
+		<p>
+			<button id="submit" onclick= "logger()">Log In</button>
+		</p>
+		<p id=wrong>
+		</p></div>
+		<div id="newbox">
+			<a class = "naccount" id = "naccount">Don't have an account? </a><a id="new" class = "naccount" href="https://media1.giphy.com/media/kHs1lBhZWaK5rj7lt3/200w.gif?cid=82a1493b5gguyqyl1gr1s5acyid19k70jga958dw288hd724&rid=200w.gif&ct=g">Join the family!</a></a>
+		</div>
+
+
+
+
+	</body>
+	<script>
+
+		var emailInput = document.getElementById("email")
+		var passInput = document.getElementById("pass")
+		var email = ""
+		var password = ""
+
+		function logger(){
+		email = emailInput.value
+		password = passInput.value
+
+		console.log("the email is " + email)
+		console.log("the password is " + password)
+        if (email =="abdullah" && password == "password"){
+        	console.log("You're in!")
+        	window.location = ('C:/Users/abdul/Desktop/web development/abd.html')
+        	}
+        else if (email =="aymen" && password == "password")
+        	{
+        	console.log("You're in!")
+        	window.location = ('C:/Users/abdul/Desktop/web development/Home.html')
+        	}
+        else {
+        	document.getElementById("IncPass").innerHTML = "Incorrect password"
+        	document.getElementById("IncPassBox").style.display = "inline"
+        	document.getElementById("newbox").style.transform = "translateY(240%) translateX(-50%)"
+        	document.getElementById("login").style.transform = "translateY(-55%) translateX(-50%)"
+
+///transform here
+        }
+		}		
+
+		var BoxWidth = document.getElementById("newbox")
+		var BoxHeight = document.getElementById("newbox")
+		Width = BoxWidth.clientWidth 
+		Height = BoxHeight.clientHeight 
+
+
+
+		
+		transformer()
+		function transformer(){
+			document.getElementById("familytxt").style.transform = "translateY(-650%) translateX(-50%)"
+		}
+
+		passInput.addEventListener("keyup", function(event) {
+			if (event.keyCode == 13) {
+				logger()
+
+			}
+		}
+			)
+
+		function ReturnToNormal(){
+		document.getElementById("IncPassBox").style.display = "none"
+		console.log("function called")
+		document.getElementById("newbox").style.transform = "translateY(170%) translateX(-50%)"
+		document.getElementById("login").style.transform = "translateY(-70%) translateX(-50%)"
+	}
+
+	</script>
+</html>

@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+	background: #000820;
+	font-family: arial;
+}
+
+#login{
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:  50%;
+  background-color: #212635;
+  transform: translateY(-70%) translateX(-50%);
+  transition-duration: 0.5s;
+  border-radius: 10px;
+border:1px solid #666666;
+
+}
+
+#wrong{
+
+	color: #FA4708;
+	font-size: 13px;
+
+}
+#pass{
+border-radius: 10px;
+}
+#email{
+
+	border-radius: 10px;
+}
+#submit{
+	border-radius: 10px;
+	border: none;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	cursor: pointer;
+	background-color: #1AB54A;
+	width: 190px;
+	color: white;
+	height: 30px;
+	margin-top: 10px;
+
+
+}
+#submit:hover{
+	background-color: #4CCB4E;
+	color: white;
+	box-shadow: 0 0px 10px 1px #4CCB4E;
+	transition-duration: 0.2s;
+
+}
+.etext{
+color: #CFCFCF;
+text-align: left;
+font-size: 13px;
+}
+.textbox{
+
+	background-color: #000820 ;
+	margin-top: 6px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border:  1px solid #666666;
+	color: #666666;
+	
+}
+#forgot{
+	margin-left: 42px;
+font-size: 10px;
+text-align: right;
+color: #1A96FE;
+text-decoration: none;
+}
+
+#newbox{
+
+  position: absolute;
+  background-color: #000820;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 53px;
+  padding-right: 53px;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(170%) translateX(-50%);
+  transition-duration: 0.5s;
+border:1px solid #666666;
+border-radius: 10px;
+width: 184px;
+
+}
+.naccount{
+font-size: 10px;
+text-decoration: none;
+text-align: center;
+}
+#naccount {
+color: darkgray;
+}
+#new{
+font-size: 10px;
+color: #1A96FE;
+text-decoration: none;
+text-align: center;
+}
+
+#familytxt {
+	color: darkgray;
+	position: absolute;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	margin: 0px;
+	font-size: 30px;
+	left: 50%;
+	top: 50%;
+	transition-duration: 0.5s;
+	transform: translateY(-500%) translateX(-50%);
+}
+
+#IncPass {
+position: relative;
+color:  darkgray;
+width: 230px;
+transition-duration: 0.5s;
+transform: translateY(-470%) translateX(-50%);
+padding-right: 50px;
+}
+#IncPassBox{
+	font-size: 13px;
+	display: none;
+	width: 250px;
+	display: ;
+	border: 1px solid red;
+	background-color: #4C0000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: 0;
+	transform: translateY(-470%) translateX(-50%);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+
+}
+
+#WrngPassExit{
+
+position: relative;
+padding-left: 50px;
+background:  none;
+border: none;
+cursor: pointer;
+color:  darkgray;
+}
+
+.topnav {
+	color: white;
+	display: inline-block;
+  display: flex;
+	text-decoration: none;
+	background-color: #212635;
+  list-style-type: none;
+  margin: -10px 0px -20px -15px !important;
+  padding: 17px 50px 17px 30px;
+  transition-duration: 0.1s;
+}
+.topnav a:hover{
+background-color: black;
+}
+.topnav li:hover{
+background-color: black;
+}
+#NavHome {
+background-color: #1AB54A;	
+}
+#WelcomeText{
+	color: white;
+margin-top: 50px;
+}
+#logout{
+background-color: red;
+position: absolute;
+right: 0%;
+padding-right: 30px;
+transition-duration: 0.1s;
+}
+#logout:hover{
+background-color: #990000;
+}
